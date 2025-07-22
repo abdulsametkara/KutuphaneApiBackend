@@ -32,7 +32,6 @@ namespace KutuphaneServis.Service
             {
                 ResponseGeneric<UserCreateDto>.Error("Kullanıcı bilgileri boş olamaz.");
             }
-            //kullanıcı adı veya e-posta adresi boş olamaz
 
             if (string.IsNullOrEmpty(user.Username) && string.IsNullOrEmpty(user.Email))
             {
@@ -46,7 +45,6 @@ namespace KutuphaneServis.Service
                 return ResponseGeneric<UserCreateDto>.Error("Bu kullanıcı adı veya e-posta adresi zaten kullanılıyor.");
             }
 
-            //gelen şifre alanını hash'le
 
             var hashedPassword = HashPassword(user.Password);
 
@@ -57,9 +55,10 @@ namespace KutuphaneServis.Service
                 Surname = user.Surname,
                 Username = user.Username,
                 Email = user.Email,
-                Password = hashedPassword
+                Password = hashedPassword,
+                Role = "User",
+                RecordDate = DateTime.Now
             };
-            newUser.RecordDate = DateTime.Now;
             _userRepository.Create(newUser);
 
             return ResponseGeneric<UserCreateDto>.Success(user, "Kullanıcı kaydı oluşturuldu.");
@@ -104,10 +103,10 @@ namespace KutuphaneServis.Service
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.Name),
-                new Claim(ClaimTypes.Sid, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role)
+                new Claim("name", user.Name),
+                new Claim("sid", user.Id.ToString()),
+                new Claim("email", user.Email),
+                new Claim("role", user.Role)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
