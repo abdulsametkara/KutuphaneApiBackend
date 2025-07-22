@@ -1,10 +1,12 @@
 ﻿using KutuphaneDataAccess.DTOs;
 using KutuphaneServis.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 
 namespace KutuphaneApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class BookController : ControllerBase
@@ -38,22 +40,24 @@ namespace KutuphaneApi.Controllers
             return Ok(book);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("Create")]
-        public IActionResult Create([FromBody] BookCreateDto book)
+        public async Task<IActionResult> Create([FromBody] BookCreateDto book)
         {
             if (book == null)
             {
                 return BadRequest("Kitap bilgileri boş bırakılamaz.");
             }
-            var result = _bookService.Create(book);
-            if (!result.Result.IsSuccess)
+            var result = await _bookService.Create(book);
+            if (!result.IsSuccess)
             {
-                return BadRequest(result.Result.Message);
+                return BadRequest(result.Message);
             }
             return Ok(result);
         }
 
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("Delete")]
         public IActionResult Delete(int id)
         {
@@ -87,17 +91,19 @@ namespace KutuphaneApi.Controllers
             return Ok(books);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpPut("Update")]
-        public IActionResult Update([FromBody] BookUpdateDto bookUpdateDto)
+        public async Task<IActionResult> Update([FromBody] BookUpdateDto bookUpdateDto)
         {
             if (bookUpdateDto == null)
             {
                 return BadRequest("Güncelleme bilgileri boş bırakılamaz.");
             }
-            var result = _bookService.Update(bookUpdateDto);
-            if (!result.Result.IsSuccess)
+            var result = await _bookService.Update(bookUpdateDto);
+            if (!result.IsSuccess)
             {
-                return BadRequest(result.Result.Message);
+                return BadRequest(result.Message);
             }
             return Ok(result);
         }

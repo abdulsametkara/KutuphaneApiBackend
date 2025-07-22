@@ -1,12 +1,13 @@
 ﻿using KutuphaneDataAccess.DTOs;
 using KutuphaneServis.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KutuphaneApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -38,6 +39,7 @@ namespace KutuphaneApi.Controllers
             return Ok(response);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("Create")]
         public IActionResult Create([FromBody] CategoryCreateDto category)
         {
@@ -54,6 +56,8 @@ namespace KutuphaneApi.Controllers
             return Ok(result);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("Delete/{id}")]
         public IActionResult Delete(int id)
         {
@@ -76,6 +80,9 @@ namespace KutuphaneApi.Controllers
             return Ok(response);
         }
 
+
+
+        [Authorize(Roles = "Admin")]
         [HttpPut("Update")]
         public IActionResult Update([FromBody] CategoryUpdateDto categoryUpdateDto)
         {

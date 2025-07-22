@@ -1,0 +1,847 @@
+2025-07-17 14:43:32.088 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 14:43:32.394 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5114: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-07-17 14:43:44.301 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 14:43:44.552 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-17 14:43:44.552 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 14:43:44.637 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 14:43:44.637 +03:00 [INF] Hosting environment: Development
+2025-07-17 14:43:44.637 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-17 14:43:45.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-17 14:43:45.679 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 293.8518ms
+2025-07-17 14:43:45.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-17 14:43:45.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-17 14:43:45.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 5.4356ms
+2025-07-17 14:43:45.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.1751ms
+2025-07-17 14:43:46.017 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-17 14:43:46.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.8961ms
+2025-07-17 14:49:03.179 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger - null null
+2025-07-17 14:49:03.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger - 301 0 null 10.7639ms
+2025-07-17 14:49:03.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-17 14:49:03.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 5.2289ms
+2025-07-17 14:49:03.219 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-17 14:49:03.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 1.5332ms
+2025-07-17 14:49:03.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-17 14:49:03.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.5562ms
+2025-07-17 14:49:03.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-17 14:49:03.471 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.9335ms
+2025-07-17 14:50:26.596 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:50:26.606 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:50:26.608 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 12.4234ms
+2025-07-17 14:50:26.614 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:50:26.616 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:50:26.620 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:50:26.645 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:50:28.555 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:50:28.598 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:50:28.604 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 1956.5908ms
+2025-07-17 14:50:28.604 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:50:28.611 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 1996.5728ms
+2025-07-17 14:51:26.079 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:51:26.081 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:51:26.081 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 2.004ms
+2025-07-17 14:51:26.085 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 40
+2025-07-17 14:51:26.086 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:51:26.086 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:51:26.086 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:51:26.134 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:51:26.135 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 14:51:26.135 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 48.6332ms
+2025-07-17 14:51:26.135 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:51:26.135 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 400 null text/plain; charset=utf-8 50.6233ms
+2025-07-17 14:55:18.980 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:55:18.987 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:18.987 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 7.3692ms
+2025-07-17 14:55:18.989 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:55:18.989 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:18.989 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:18.990 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:55:19.007 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:55:19.008 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:55:19.009 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 18.8447ms
+2025-07-17 14:55:19.009 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:19.009 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 19.9988ms
+2025-07-17 14:55:28.078 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:55:28.078 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:28.078 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.5678ms
+2025-07-17 14:55:28.080 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:55:28.080 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:28.081 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:28.081 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:55:28.083 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:55:28.083 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:55:28.084 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.8348ms
+2025-07-17 14:55:28.084 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:28.084 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.9003ms
+2025-07-17 14:55:42.440 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:55:42.440 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:42.440 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.7051ms
+2025-07-17 14:55:42.442 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:55:42.442 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:42.442 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:42.442 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:55:42.444 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:55:42.444 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:55:42.444 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.1819ms
+2025-07-17 14:55:42.444 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:42.445 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.0641ms
+2025-07-17 14:55:54.162 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:55:54.162 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:54.163 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.6661ms
+2025-07-17 14:55:54.164 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:55:54.165 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:55:54.165 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:54.165 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:55:54.168 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:55:54.169 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:55:54.169 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.9623ms
+2025-07-17 14:55:54.169 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:55:54.169 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 4.8758ms
+2025-07-17 14:56:44.723 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:56:44.724 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:56:44.724 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.6334ms
+2025-07-17 14:56:44.729 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:56:44.729 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:56:44.729 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:56:44.729 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:56:44.733 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:56:44.733 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:56:44.734 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 4.3023ms
+2025-07-17 14:56:44.734 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:56:44.734 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 5.5983ms
+2025-07-17 14:56:56.521 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 14:56:56.521 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:56:56.522 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.7645ms
+2025-07-17 14:56:56.524 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 14:56:56.524 +03:00 [INF] CORS policy execution successful.
+2025-07-17 14:56:56.524 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:56:56.524 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 14:56:56.528 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 14:56:56.528 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 14:56:56.528 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.5956ms
+2025-07-17 14:56:56.528 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 14:56:56.528 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 4.6978ms
+2025-07-17 15:00:08.115 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:00:08.115 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:00:08.116 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.7457ms
+2025-07-17 15:00:08.121 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 15:00:08.122 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:00:08.122 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:00:08.123 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:00:08.127 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:00:08.128 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 15:00:08.128 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 5.3218ms
+2025-07-17 15:00:08.128 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:00:08.128 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 7.3428ms
+2025-07-17 15:00:23.447 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:00:23.447 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:00:23.448 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.7313ms
+2025-07-17 15:00:23.449 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 15:00:23.449 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:00:23.449 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:00:23.449 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:00:23.453 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:00:23.453 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 15:00:23.453 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.7592ms
+2025-07-17 15:00:23.453 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:00:23.453 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 4.5057ms
+2025-07-17 15:06:19.420 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:06:19.420 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:06:19.420 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.8739ms
+2025-07-17 15:06:19.423 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 15:06:19.423 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:06:19.423 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:06:19.423 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:06:19.431 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:06:19.432 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 15:06:19.432 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 8.6316ms
+2025-07-17 15:06:19.432 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:06:19.432 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 9.5979ms
+2025-07-17 15:09:57.503 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:09:57.503 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:09:57.503 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.8206ms
+2025-07-17 15:09:57.505 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 15:09:57.505 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:09:57.505 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:09:57.505 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:09:57.509 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:09:57.510 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 15:09:57.510 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 4.9555ms
+2025-07-17 15:09:57.510 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:09:57.510 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 5.7471ms
+2025-07-17 15:29:22.474 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 15:29:22.582 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 15:29:22.584 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 15:29:22.584 +03:00 [INF] Hosting environment: Development
+2025-07-17 15:29:22.584 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-17 15:30:11.938 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 15:30:12.177 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-17 15:30:12.177 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 15:30:12.248 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 15:30:12.248 +03:00 [INF] Hosting environment: Development
+2025-07-17 15:30:12.248 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-17 15:30:12.712 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-17 15:30:12.913 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 207.3961ms
+2025-07-17 15:30:12.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-17 15:30:12.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-17 15:30:12.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 4.0669ms
+2025-07-17 15:30:12.980 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.9846ms
+2025-07-17 15:30:13.144 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-17 15:30:13.158 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.1974ms
+2025-07-17 15:33:06.309 +03:00 [INF] Application is shutting down...
+2025-07-17 15:33:10.133 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 15:33:10.373 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-17 15:33:10.373 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 15:33:10.448 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 15:33:10.449 +03:00 [INF] Hosting environment: Development
+2025-07-17 15:33:10.449 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-17 15:33:10.935 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-17 15:33:11.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 192.4403ms
+2025-07-17 15:33:11.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-17 15:33:11.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 4.2184ms
+2025-07-17 15:33:11.140 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-17 15:33:11.169 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.5913ms
+2025-07-17 15:33:11.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-17 15:33:11.503 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.5143ms
+2025-07-17 15:33:19.492 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:33:19.500 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:33:19.501 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 9.1227ms
+2025-07-17 15:33:19.503 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 15:33:19.505 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:33:19.508 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:33:19.528 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:33:21.309 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:33:21.350 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 15:33:21.358 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 1827.6407ms
+2025-07-17 15:33:21.358 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:33:21.364 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 1860.6661ms
+2025-07-17 15:36:33.621 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:36:33.623 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:36:33.623 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 1.7601ms
+2025-07-17 15:36:33.625 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 31
+2025-07-17 15:36:33.625 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:36:33.625 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:36:33.625 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:36:33.680 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:36:33.681 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 15:36:33.681 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 55.6892ms
+2025-07-17 15:36:33.681 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:36:33.681 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 400 null text/plain; charset=utf-8 57.163ms
+2025-07-17 15:36:40.064 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 15:36:40.065 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:36:40.065 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.9238ms
+2025-07-17 15:36:40.067 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 15:36:40.067 +03:00 [INF] CORS policy execution successful.
+2025-07-17 15:36:40.068 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:36:40.068 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 15:36:40.082 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 15:36:40.083 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 15:36:40.083 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 15.4612ms
+2025-07-17 15:36:40.083 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 15:36:40.083 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 16.9562ms
+2025-07-17 16:59:10.492 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 16:59:10.496 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:10.496 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 28.6725ms
+2025-07-17 16:59:10.498 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:10.498 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:10.499 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:10.499 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:11.266 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:11.266 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:11.266 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 767.3157ms
+2025-07-17 16:59:11.266 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:11.266 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 768.8354ms
+2025-07-17 16:59:24.237 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 16:59:24.237 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:24.237 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.5501ms
+2025-07-17 16:59:24.239 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:24.239 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:24.239 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:24.239 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:24.241 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:24.242 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:24.242 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.6289ms
+2025-07-17 16:59:24.242 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:24.242 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.3566ms
+2025-07-17 16:59:24.855 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:24.855 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:24.855 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:24.855 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:24.857 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:24.857 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:24.857 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.2386ms
+2025-07-17 16:59:24.858 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:24.858 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 2.9418ms
+2025-07-17 16:59:25.210 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:25.210 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:25.210 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.210 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:25.213 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:25.213 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:25.214 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.0843ms
+2025-07-17 16:59:25.214 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.214 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.8428ms
+2025-07-17 16:59:25.343 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:25.343 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:25.343 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.343 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:25.346 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:25.346 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:25.346 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.8197ms
+2025-07-17 16:59:25.346 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.346 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.6638ms
+2025-07-17 16:59:25.492 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:25.492 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:25.492 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.493 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:25.494 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:25.495 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:25.495 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.2074ms
+2025-07-17 16:59:25.495 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.495 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.1596ms
+2025-07-17 16:59:25.730 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:25.730 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:25.731 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.731 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:25.733 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:25.733 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:25.733 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.5903ms
+2025-07-17 16:59:25.733 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:25.733 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.3857ms
+2025-07-17 16:59:28.623 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 31
+2025-07-17 16:59:28.624 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:28.624 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:28.624 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:28.626 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:28.626 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 16:59:28.626 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.3917ms
+2025-07-17 16:59:28.626 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:28.626 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 400 null text/plain; charset=utf-8 3.2575ms
+2025-07-17 16:59:57.826 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 16:59:57.826 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:57.826 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.5737ms
+2025-07-17 16:59:57.828 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 16:59:57.828 +03:00 [INF] CORS policy execution successful.
+2025-07-17 16:59:57.828 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:57.828 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 16:59:57.830 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 16:59:57.830 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 16:59:57.830 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.4437ms
+2025-07-17 16:59:57.830 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 16:59:57.830 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.0461ms
+2025-07-17 17:02:04.969 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:02:04.969 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:04.970 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 1.3368ms
+2025-07-17 17:02:04.972 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:02:04.973 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:04.973 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:04.973 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:02:04.978 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:02:04.979 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:02:04.979 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 6.022ms
+2025-07-17 17:02:04.979 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:04.979 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 7.4565ms
+2025-07-17 17:02:26.068 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:02:26.070 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:26.074 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 6.0232ms
+2025-07-17 17:02:26.104 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 32
+2025-07-17 17:02:26.105 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:26.105 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:26.105 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:02:26.108 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:02:26.109 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 17:02:26.109 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.9915ms
+2025-07-17 17:02:26.109 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:26.109 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 400 null text/plain; charset=utf-8 27.0008ms
+2025-07-17 17:02:28.780 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:02:28.781 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:28.781 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:28.781 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:02:28.783 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:02:28.783 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:02:28.783 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.5137ms
+2025-07-17 17:02:28.783 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:28.784 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.4171ms
+2025-07-17 17:02:45.053 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:02:45.054 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:45.054 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.6968ms
+2025-07-17 17:02:45.055 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:02:45.055 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:45.055 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:45.055 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:02:45.058 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:02:45.059 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:02:45.059 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.7647ms
+2025-07-17 17:02:45.059 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:45.059 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 4.4105ms
+2025-07-17 17:02:47.288 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:02:47.288 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:47.288 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:47.288 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:02:47.290 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:02:47.291 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:02:47.291 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.7457ms
+2025-07-17 17:02:47.291 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:47.291 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.5538ms
+2025-07-17 17:02:55.101 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:02:55.101 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:55.101 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.5129ms
+2025-07-17 17:02:55.102 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:02:55.102 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:02:55.102 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:55.102 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:02:55.104 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:02:55.105 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:02:55.105 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.7787ms
+2025-07-17 17:02:55.105 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:02:55.106 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.6137ms
+2025-07-17 17:03:03.248 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:03:03.248 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:03:03.248 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.4398ms
+2025-07-17 17:03:03.250 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:03:03.250 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:03:03.250 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:03:03.250 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:03:03.254 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:03:03.254 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:03:03.254 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.9178ms
+2025-07-17 17:03:03.254 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:03:03.255 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 4.7872ms
+2025-07-17 17:03:11.345 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:03:11.345 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:03:11.345 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.5389ms
+2025-07-17 17:03:11.347 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:03:11.347 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:03:11.347 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:03:11.347 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:03:11.349 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:03:11.350 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:03:11.350 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.6887ms
+2025-07-17 17:03:11.350 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:03:11.350 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.2988ms
+2025-07-17 17:04:23.229 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:04:23.232 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:04:23.266 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 36.4802ms
+2025-07-17 17:04:23.271 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:04:23.271 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:04:23.271 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:04:23.271 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:04:23.275 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:04:23.276 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:04:23.277 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 5.192ms
+2025-07-17 17:04:23.277 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:04:23.277 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 6.3052ms
+2025-07-17 17:04:42.135 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-17 17:04:42.135 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:04:42.135 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.8166ms
+2025-07-17 17:04:42.138 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-17 17:04:42.138 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:04:42.138 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:04:42.138 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 17:04:42.141 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-17 17:04:42.141 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:04:42.142 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.5702ms
+2025-07-17 17:04:42.142 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 17:04:42.142 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 4.2316ms
+2025-07-17 17:05:55.360 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:05:55.400 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:05:55.400 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:05:55.403 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:05:55.479 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:05:55.494 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:05:55.502 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 99.3515ms
+2025-07-17 17:05:55.502 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:05:55.503 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 142.3093ms
+2025-07-17 17:06:02.674 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:06:02.676 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:06:02.676 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:02.677 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:06:02.680 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:06:02.681 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:06:02.682 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 4.9994ms
+2025-07-17 17:06:02.682 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:02.682 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 7.925ms
+2025-07-17 17:06:05.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:06:05.567 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:06:05.567 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:05.567 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:06:05.570 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:06:05.570 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:06:05.570 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 2.6433ms
+2025-07-17 17:06:05.570 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:05.570 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 3.6071ms
+2025-07-17 17:06:09.770 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:06:09.770 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:06:09.770 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:09.771 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:06:09.772 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:06:09.773 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:06:09.773 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 2.048ms
+2025-07-17 17:06:09.773 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:09.773 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 3.5702ms
+2025-07-17 17:06:25.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:06:25.406 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:06:25.406 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:25.406 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:06:25.407 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:06:25.408 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:06:25.408 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 1.6814ms
+2025-07-17 17:06:25.408 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:25.408 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 2.4099ms
+2025-07-17 17:06:28.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:06:28.126 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:06:28.126 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:28.126 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:06:28.128 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:06:28.128 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:06:28.128 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 2.1845ms
+2025-07-17 17:06:28.128 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:06:28.128 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 3.0656ms
+2025-07-17 17:08:33.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:08:33.221 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:08:33.223 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:08:33.223 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:08:33.224 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:08:33.225 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:08:33.225 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 1.7618ms
+2025-07-17 17:08:33.225 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:08:33.225 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 7.8245ms
+2025-07-17 17:16:49.697 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:16:49.704 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:16:49.704 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:16:49.704 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:16:49.711 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:16:49.712 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:16:49.712 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 7.9442ms
+2025-07-17 17:16:49.712 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:16:49.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 15.2502ms
+2025-07-17 17:32:19.477 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:32:19.478 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:32:19.481 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 2.9494ms
+2025-07-17 17:32:19.484 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:32:19.484 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:32:19.484 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:32:19.486 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:32:19.631 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:32:19.654 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:32:19.654 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:32:19.675 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 188.9213ms
+2025-07-17 17:32:19.675 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:32:19.675 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 191.7002ms
+2025-07-17 17:32:29.779 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:32:29.780 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:32:29.780 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 0.6093ms
+2025-07-17 17:32:29.781 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:32:29.781 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:32:29.781 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:32:29.781 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:32:29.784 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:32:29.785 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:32:29.785 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:32:29.785 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 3.7574ms
+2025-07-17 17:32:29.785 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:32:29.785 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 4.3414ms
+2025-07-17 17:34:01.552 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:34:01.553 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:34:01.553 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 1.123ms
+2025-07-17 17:34:01.557 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:34:01.557 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:34:01.557 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:34:01.557 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:34:01.559 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:34:01.559 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:34:01.559 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:34:01.560 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 2.1098ms
+2025-07-17 17:34:01.560 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:34:01.560 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 2.6158ms
+2025-07-17 17:35:27.156 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:35:27.157 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:35:27.158 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:35:27.158 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:35:27.164 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:35:27.165 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:35:27.165 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 7.0438ms
+2025-07-17 17:35:27.165 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:35:27.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 9.549ms
+2025-07-17 17:35:28.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:35:28.809 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:35:28.809 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:35:28.809 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:35:28.810 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:35:28.810 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:35:28.810 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 1.6885ms
+2025-07-17 17:35:28.810 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:35:28.811 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 2.4971ms
+2025-07-17 17:36:10.256 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:36:10.257 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:36:10.260 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 4.2134ms
+2025-07-17 17:36:10.264 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 88
+2025-07-17 17:36:10.264 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:36:10.264 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:36:10.264 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:36:10.268 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:36:10.269 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:36:10.269 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:36:10.270 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 5.1088ms
+2025-07-17 17:36:10.270 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:36:10.270 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 6.0153ms
+2025-07-17 17:36:12.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:36:12.320 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:36:12.320 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:36:12.320 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:36:12.323 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:36:12.323 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:36:12.324 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 3.4841ms
+2025-07-17 17:36:12.324 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:36:12.324 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 5.2402ms
+2025-07-17 17:36:27.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-17 17:36:27.680 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:36:27.681 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:36:27.681 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:36:27.683 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-17 17:36:27.683 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 17:36:27.683 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 2.6696ms
+2025-07-17 17:36:27.683 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-17 17:36:27.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 3.5883ms
+2025-07-17 17:36:45.528 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:36:45.529 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:36:45.529 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 0.4748ms
+2025-07-17 17:36:45.530 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:36:45.531 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:36:45.531 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:36:45.531 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:36:45.533 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:36:45.534 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:36:45.534 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:36:45.534 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 3.1883ms
+2025-07-17 17:36:45.534 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:36:45.534 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 3.8212ms
+2025-07-17 17:37:14.476 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:37:14.477 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:37:14.477 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 0.6271ms
+2025-07-17 17:37:14.478 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:37:14.479 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:37:14.479 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:37:14.479 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:37:14.481 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:37:14.481 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:37:14.481 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:37:14.481 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 2.77ms
+2025-07-17 17:37:14.481 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:37:14.482 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 3.3698ms
+2025-07-17 17:38:03.234 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:38:03.234 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:38:03.235 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 0.4518ms
+2025-07-17 17:38:03.242 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:38:03.242 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:38:03.242 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:38:03.242 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:38:03.245 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:38:03.245 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:38:03.245 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:38:03.245 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 2.5102ms
+2025-07-17 17:38:03.245 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:38:03.245 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 3.2115ms
+2025-07-17 17:38:20.022 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-17 17:38:20.023 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:38:20.023 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 0.4048ms
+2025-07-17 17:38:20.024 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 87
+2025-07-17 17:38:20.025 +03:00 [INF] CORS policy execution successful.
+2025-07-17 17:38:20.025 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:38:20.025 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-17 17:38:20.027 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 17:38:20.028 +03:00 [INF] Kitap başarıyla oluşturuldu: samet
+2025-07-17 17:38:20.028 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 17:38:20.028 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 3.205ms
+2025-07-17 17:38:20.028 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-17 17:38:20.028 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 3.8936ms

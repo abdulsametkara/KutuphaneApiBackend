@@ -5633,11 +5633,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneApi\\KutuphaneApi.csproj",
+      "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\KutuphaneApi.csproj",
       "projectName": "KutuphaneApi",
-      "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneApi\\KutuphaneApi.csproj",
+      "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\KutuphaneApi.csproj",
       "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneApi\\obj\\",
+      "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5659,8 +5659,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj": {
-              "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj"
+            "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\KutuphaneServis.csproj": {
+              "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\KutuphaneServis.csproj"
             }
           }
         }

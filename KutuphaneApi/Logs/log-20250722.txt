@@ -1,0 +1,596 @@
+2025-07-22 09:09:21.987 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 09:09:26.191 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-22 09:09:26.192 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-22 09:09:26.268 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 09:09:26.268 +03:00 [INF] Hosting environment: Development
+2025-07-22 09:09:26.268 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-22 09:09:26.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-22 09:09:26.891 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 230.4709ms
+2025-07-22 09:09:26.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-22 09:09:26.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-22 09:09:26.901 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 5.9578ms
+2025-07-22 09:09:26.961 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.8474ms
+2025-07-22 09:09:26.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-22 09:09:27.000 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.4559ms
+2025-07-22 09:15:19.652 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 09:15:19.899 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-22 09:15:19.900 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-22 09:15:19.969 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 09:15:19.969 +03:00 [INF] Hosting environment: Development
+2025-07-22 09:15:19.969 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-22 09:15:20.463 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-22 09:15:20.657 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 200.2004ms
+2025-07-22 09:15:20.661 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-22 09:15:20.661 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-22 09:15:20.670 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 9.2231ms
+2025-07-22 09:15:20.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7173ms
+2025-07-22 09:15:20.722 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-22 09:15:20.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.5211ms
+2025-07-22 09:15:28.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:15:28.897 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:15:28.900 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:15:28.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 12.557ms
+2025-07-22 09:15:44.464 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 65
+2025-07-22 09:15:44.469 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:15:44.472 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:15:44.495 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:15:46.294 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:15:46.335 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:15:46.342 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 1844.1872ms
+2025-07-22 09:15:46.342 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:15:46.350 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 1886.256ms
+2025-07-22 09:15:58.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:15:58.441 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-22 09:15:58.443 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:15:58.543 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+2025-07-22 09:15:58.557 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:15:58.564 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi) in 120.5356ms
+2025-07-22 09:15:58.564 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-22 09:15:58.564 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 200 null application/json; charset=utf-8 156.551ms
+2025-07-22 09:16:08.654 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7275/api/Author/Delete?id=2006 - null null
+2025-07-22 09:16:08.655 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:16:08.657 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-07-22 09:16:08.659 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-22 09:16:08.659 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7275/api/Author/Delete?id=2006 - 403 0 null 5.405ms
+2025-07-22 09:16:17.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/GetByName?name=1 - null null
+2025-07-22 09:16:17.657 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetByName (KutuphaneApi)'
+2025-07-22 09:16:17.659 +03:00 [INF] Route matched with {action = "GetByName", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:16:17.681 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0
+2025-07-22 09:16:17.681 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:16:17.682 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetByName (KutuphaneApi) in 22.2778ms
+2025-07-22 09:16:17.682 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetByName (KutuphaneApi)'
+2025-07-22 09:16:17.682 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/GetByName?name=1 - 200 null application/json; charset=utf-8 26.0055ms
+2025-07-22 09:16:19.854 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/GetByName?name=a - null null
+2025-07-22 09:16:19.855 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetByName (KutuphaneApi)'
+2025-07-22 09:16:19.855 +03:00 [INF] Route matched with {action = "GetByName", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:16:19.861 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+WHERE [a].[Name] = @__name_0
+2025-07-22 09:16:19.861 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:16:19.862 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetByName (KutuphaneApi) in 6.2743ms
+2025-07-22 09:16:19.862 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetByName (KutuphaneApi)'
+2025-07-22 09:16:19.862 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/GetByName?name=a - 200 null application/json; charset=utf-8 7.6206ms
+2025-07-22 09:16:24.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/GetById?id=1 - null null
+2025-07-22 09:16:24.202 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetById (KutuphaneApi)'
+2025-07-22 09:16:24.204 +03:00 [INF] Route matched with {action = "GetById", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:16:24.253 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-07-22 09:16:24.263 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 09:16:24.264 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetById (KutuphaneApi) in 60.1111ms
+2025-07-22 09:16:24.264 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetById (KutuphaneApi)'
+2025-07-22 09:16:24.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/GetById?id=1 - 200 null application/json; charset=utf-8 62.8552ms
+2025-07-22 09:16:51.569 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Author/Create - application/json 93
+2025-07-22 09:16:51.570 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:16:51.570 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-07-22 09:16:51.570 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-07-22 09:16:51.570 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Author/Create - 403 0 null 1.4757ms
+2025-07-22 09:17:07.198 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 63
+2025-07-22 09:17:07.199 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:17:07.199 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:17:07.199 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:17:07.203 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:17:07.204 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:17:07.204 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 4.9358ms
+2025-07-22 09:17:07.204 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:17:07.204 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 6.6797ms
+2025-07-22 09:17:16.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:17:16.670 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-22 09:17:16.670 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:17:16.671 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+2025-07-22 09:17:16.672 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:17:16.672 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi) in 2.3838ms
+2025-07-22 09:17:16.672 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-22 09:17:16.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 200 null application/json; charset=utf-8 3.6693ms
+2025-07-22 09:17:21.366 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Author/Create - application/json 93
+2025-07-22 09:17:21.366 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:17:21.367 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.Create (KutuphaneApi)'
+2025-07-22 09:17:21.368 +03:00 [INF] Route matched with {action = "Create", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(KutuphaneCore.DTOs.AuthorCreateDto) on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:17:21.479 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([Name], [PlaceofBirth], [RecordDate], [Surname], [YearofBirth])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-07-22 09:17:21.493 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Threading.Tasks.Task`1[[KutuphaneServis.Interfaces.IResponse`1[[KutuphaneCore.Entities.Author, KutuphaneCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], KutuphaneServis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 09:17:21.509 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.Create (KutuphaneApi) in 140.8013ms
+2025-07-22 09:17:21.509 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.Create (KutuphaneApi)'
+2025-07-22 09:17:21.509 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Author/Create - 200 null application/json; charset=utf-8 142.7965ms
+2025-07-22 09:17:33.745 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7275/api/Author/Delete?id=3002 - null null
+2025-07-22 09:17:33.746 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:17:33.746 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.Delete (KutuphaneApi)'
+2025-07-22 09:17:33.747 +03:00 [INF] Route matched with {action = "Delete", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-22 09:17:33.754 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-07-22 09:17:33.765 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Authors]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-07-22 09:17:33.768 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneCore.Entities.Author, KutuphaneCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 09:17:33.769 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.Delete (KutuphaneApi) in 21.6826ms
+2025-07-22 09:17:33.769 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.Delete (KutuphaneApi)'
+2025-07-22 09:17:33.769 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7275/api/Author/Delete?id=3002 - 200 null application/json; charset=utf-8 24.082ms
+2025-07-22 09:19:35.438 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 09:19:35.684 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-22 09:19:35.685 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-22 09:19:35.827 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 09:19:35.827 +03:00 [INF] Hosting environment: Development
+2025-07-22 09:19:35.827 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-22 09:19:36.314 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-22 09:19:36.495 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 185.7198ms
+2025-07-22 09:19:36.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-22 09:19:36.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-22 09:19:36.504 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 4.5596ms
+2025-07-22 09:19:36.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.7283ms
+2025-07-22 09:19:36.559 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-22 09:19:36.577 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.2301ms
+2025-07-22 09:20:42.044 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-22 09:20:42.051 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:42.052 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 7.8981ms
+2025-07-22 09:20:42.058 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-22 09:20:42.060 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:42.062 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:20:42.081 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:20:43.019 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:20:43.061 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:20:43.069 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 985.4225ms
+2025-07-22 09:20:43.069 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:20:43.075 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 1016.8095ms
+2025-07-22 09:20:43.091 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:43.091 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:43.091 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:43.096 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:43.096 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:43.103 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:43.103 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:43.106 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:43.107 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:43.107 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:43.107 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:43.107 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:43.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 15.9168ms
+2025-07-22 09:20:43.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 15.9337ms
+2025-07-22 09:20:43.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 16.0292ms
+2025-07-22 09:20:46.153 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 35
+2025-07-22 09:20:46.153 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:46.153 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:20:46.154 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:20:46.201 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:20:46.202 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:20:46.203 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 48.5409ms
+2025-07-22 09:20:46.203 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:20:46.203 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 50.38ms
+2025-07-22 09:20:46.210 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:46.212 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:46.212 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:46.212 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:46.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 2.1656ms
+2025-07-22 09:20:46.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:46.223 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:46.224 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:46.224 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:46.224 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:46.224 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:46.224 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:46.224 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:46.224 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 2.2675ms
+2025-07-22 09:20:46.224 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 1.7167ms
+2025-07-22 09:20:50.636 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-22 09:20:50.637 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:50.637 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.7731ms
+2025-07-22 09:20:50.638 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-22 09:20:50.638 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:50.638 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:20:50.638 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:20:50.650 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:20:50.650 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:20:50.650 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 12.0273ms
+2025-07-22 09:20:50.650 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:20:50.650 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 12.7338ms
+2025-07-22 09:20:50.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:50.663 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:50.663 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:50.663 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:50.663 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.1514ms
+2025-07-22 09:20:50.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:50.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:50.671 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:50.671 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:50.671 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:50.671 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:50.671 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:50.671 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:50.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.8801ms
+2025-07-22 09:20:50.671 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.9868ms
+2025-07-22 09:20:52.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:52.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:52.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:52.063 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:52.063 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:52.063 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:52.063 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:52.063 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:52.063 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:52.063 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:52.063 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:52.063 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:52.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 1.0964ms
+2025-07-22 09:20:52.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 1.1038ms
+2025-07-22 09:20:52.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.1037ms
+2025-07-22 09:20:54.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-22 09:20:54.061 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 10.5152ms
+2025-07-22 09:20:54.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-22 09:20:54.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-22 09:20:54.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 1.4524ms
+2025-07-22 09:20:54.082 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.6611ms
+2025-07-22 09:20:54.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-22 09:20:54.123 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.2887ms
+2025-07-22 09:20:55.233 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:55.234 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.234 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.234 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.8607ms
+2025-07-22 09:20:55.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:55.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:55.236 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.236 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.236 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.236 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.236 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.236 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.6892ms
+2025-07-22 09:20:55.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.6892ms
+2025-07-22 09:20:55.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:55.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:55.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:55.505 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.505 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.505 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.505 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.505 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.505 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.505 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.505 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.505 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.506 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.6955ms
+2025-07-22 09:20:55.506 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.6965ms
+2025-07-22 09:20:55.506 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.6966ms
+2025-07-22 09:20:55.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:55.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:55.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:55.641 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.641 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.641 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.641 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.641 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.641 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.641 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.641 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.641 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 1.2046ms
+2025-07-22 09:20:55.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 1.2176ms
+2025-07-22 09:20:55.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.2045ms
+2025-07-22 09:20:55.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:55.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:55.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:55.867 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.867 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.867 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.867 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.867 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.867 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.867 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.867 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.867 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.6669ms
+2025-07-22 09:20:55.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.6681ms
+2025-07-22 09:20:55.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.6661ms
+2025-07-22 09:20:55.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:55.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:55.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:55.979 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.979 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.979 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:55.979 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.979 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.979 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:55.979 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.979 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.979 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:55.979 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.7196ms
+2025-07-22 09:20:55.979 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.7202ms
+2025-07-22 09:20:55.979 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.7659ms
+2025-07-22 09:20:58.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:20:58.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:20:58.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:20:58.718 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:58.718 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:20:58.718 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:58.718 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:20:58.718 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:58.718 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:20:58.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.4003ms
+2025-07-22 09:20:58.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.4003ms
+2025-07-22 09:21:03.190 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:21:03.190 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:21:03.190 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:21:03.190 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 4473.1842ms
+2025-07-22 09:21:05.775 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:21:05.775 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:21:05.775 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:21:05.776 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:21:05.776 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:21:05.776 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:21:05.776 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:21:05.776 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:21:05.776 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:21:05.776 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:21:05.776 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:21:05.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.2769ms
+2025-07-22 09:21:05.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.6667ms
+2025-07-22 09:21:05.776 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:21:05.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.7354ms
+2025-07-22 09:25:40.450 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-22 09:25:40.450 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:40.450 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.9186ms
+2025-07-22 09:25:40.452 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 35
+2025-07-22 09:25:40.452 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:40.453 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:25:40.453 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:25:40.456 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:25:40.456 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:25:40.457 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 3.9366ms
+2025-07-22 09:25:40.457 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:25:40.457 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 5.2218ms
+2025-07-22 09:25:40.472 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:40.472 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:40.472 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:40.472 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:40.472 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.0113ms
+2025-07-22 09:25:40.473 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:40.473 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:40.473 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:40.473 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:40.473 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:40.473 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:40.473 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:40.473 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:40.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.4828ms
+2025-07-22 09:25:40.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.4565ms
+2025-07-22 09:25:42.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:42.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:42.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:42.027 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:42.027 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:42.027 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:42.028 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:42.028 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:42.028 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:42.031 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:42.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 1.3054ms
+2025-07-22 09:25:42.031 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:42.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 4.1837ms
+2025-07-22 09:25:42.032 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:42.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 7.5399ms
+2025-07-22 09:25:43.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:43.431 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:43.431 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:43.432 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:43.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.2209ms
+2025-07-22 09:25:43.762 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:43.763 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:43.763 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:43.763 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:43.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 1.1707ms
+2025-07-22 09:25:43.901 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:43.901 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:43.901 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:43.901 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:43.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.9889ms
+2025-07-22 09:25:44.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:44.320 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:44.320 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:44.320 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:44.320 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:44.320 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:44.320 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:44.320 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:44.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.5643ms
+2025-07-22 09:25:44.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 1.0398ms
+2025-07-22 09:25:46.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:46.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:46.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:46.054 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:46.054 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:46.054 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:46.054 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:46.054 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:46.054 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:46.054 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.4917ms
+2025-07-22 09:25:46.054 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.8824ms
+2025-07-22 09:25:46.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:46.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:46.311 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:46.311 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:46.311 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:46.311 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:46.311 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:46.311 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:46.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.5479ms
+2025-07-22 09:25:46.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.4956ms
+2025-07-22 09:25:49.836 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-22 09:25:49.836 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:49.837 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 0.5199ms
+2025-07-22 09:25:49.838 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-22 09:25:49.838 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:49.838 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:25:49.838 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 09:25:49.840 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-22 09:25:49.840 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 09:25:49.841 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2.4301ms
+2025-07-22 09:25:49.841 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 09:25:49.841 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 3.0603ms
+2025-07-22 09:25:49.854 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:49.854 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:49.854 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:49.854 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:49.854 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:49.854 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:49.854 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:49.854 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:49.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.5532ms
+2025-07-22 09:25:49.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.5553ms
+2025-07-22 09:25:50.483 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:50.483 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:50.483 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:50.483 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 4432.277ms
+2025-07-22 09:25:50.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:50.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:50.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:50.639 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:50.639 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:50.639 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:50.639 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:50.639 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:50.639 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:50.639 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:50.639 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:50.639 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:50.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.5912ms
+2025-07-22 09:25:50.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.9488ms
+2025-07-22 09:25:50.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.591ms
+2025-07-22 09:25:51.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:51.550 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:51.550 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:51.550 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:51.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.4813ms
+2025-07-22 09:25:51.993 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-22 09:25:51.993 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:51.993 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:51.993 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:51.993 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 401 0 null 0.629ms
+2025-07-22 09:25:51.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-22 09:25:51.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-22 09:25:51.999 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:51.999 +03:00 [INF] CORS policy execution successful.
+2025-07-22 09:25:51.999 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:51.999 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 09:25:51.999 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:51.999 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 09:25:51.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 401 0 null 0.537ms
+2025-07-22 09:25:51.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 401 0 null 0.5424ms

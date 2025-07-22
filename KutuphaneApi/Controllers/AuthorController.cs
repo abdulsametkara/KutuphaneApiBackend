@@ -1,4 +1,4 @@
-﻿    using KutuphaneCore.DTOs;
+﻿using KutuphaneCore.DTOs;
 using KutuphaneCore.Entities;
 using KutuphaneServis.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -18,9 +18,8 @@ namespace KutuphaneApi.Controllers
             _authorService = authorService;
         }
 
-        [AllowAnonymous]
+        
         [HttpGet("ListAll")]
-
         public IActionResult GetAll()
         {
             var authors = _authorService.ListAll();
@@ -32,6 +31,8 @@ namespace KutuphaneApi.Controllers
             return Ok(authors);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("Delete")]
         public IActionResult Delete(int id)
         {
@@ -43,6 +44,7 @@ namespace KutuphaneApi.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("Create")]
         public IActionResult Create([FromBody] AuthorCreateDto author)
         {
@@ -59,7 +61,6 @@ namespace KutuphaneApi.Controllers
         }
 
         [HttpGet("GetByName")]
-
         public IActionResult GetByName(string name)
         {
             var result = _authorService.GetByName(name);
@@ -81,6 +82,8 @@ namespace KutuphaneApi.Controllers
             return Ok(author);
         }
 
+
+        [Authorize(Roles = "Admin")]
         [HttpPut("Update")]
         public IActionResult Update([FromBody] AuthorUpdateDto authorUpdate)
         {

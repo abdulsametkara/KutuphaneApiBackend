@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fNrSjHlRvyI=",
+  "dgSpecHash": "Zwgq+k9ZFHY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\KutuphaneCore.csproj",
+  "projectFilePath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\KutuphaneCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

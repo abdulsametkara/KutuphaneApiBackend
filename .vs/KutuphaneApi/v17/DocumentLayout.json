@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi\\kutuphaneapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|solutionrelative:kutuphaneapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57E839A7-1073-484C-B8E9-7C4FCA1CB9E9}|KutuphaneCore\\KutuphaneCore.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi\\kutuphanecore\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57E839A7-1073-484C-B8E9-7C4FCA1CB9E9}|KutuphaneCore\\KutuphaneCore.csproj|solutionrelative:kutuphanecore\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi\\kutuphaneservis\\service\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|solutionrelative:kutuphaneservis\\service\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthorService.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\Service\\AuthorService.cs",
-              "RelativeDocumentMoniker": "KutuphaneServis\\Service\\AuthorService.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\Service\\AuthorService.cs",
-              "RelativeToolTip": "KutuphaneServis\\Service\\AuthorService.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAowFQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T08:31:17.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KutuphaneServis",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj",
-              "RelativeDocumentMoniker": "KutuphaneServis\\KutuphaneServis.csproj",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj",
-              "RelativeToolTip": "KutuphaneServis\\KutuphaneServis.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-17T08:31:13.659Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -61,6 +43,56 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneApi\\Program.cs",
+              "RelativeDocumentMoniker": "KutuphaneApi\\Program.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneApi\\Program.cs*",
+              "RelativeToolTip": "KutuphaneApi\\Program.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T11:12:37.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\Entities\\Author.cs",
+              "RelativeDocumentMoniker": "KutuphaneCore\\Entities\\Author.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\Entities\\Author.cs",
+              "RelativeToolTip": "KutuphaneCore\\Entities\\Author.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T09:50:30.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\Service\\AuthorService.cs",
+              "RelativeDocumentMoniker": "KutuphaneServis\\Service\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\Service\\AuthorService.cs",
+              "RelativeToolTip": "KutuphaneServis\\Service\\AuthorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T08:31:17.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KutuphaneServis.csproj",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj",
+              "RelativeDocumentMoniker": "KutuphaneServis\\KutuphaneServis.csproj",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj",
+              "RelativeToolTip": "KutuphaneServis\\KutuphaneServis.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-17T08:31:13.659Z"
             }
           ]
         }

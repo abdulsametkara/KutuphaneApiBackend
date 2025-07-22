@@ -53,7 +53,7 @@ namespace KutuphaneServis.Service
                 var category = _categoryRepository.GetByIdAsync(id).Result;
                 if (category == null)
                 {
-                    return ResponseGeneric<CategoryQueryDto>.Error("Kategori bulunamadı.");
+                    return ResponseGeneric<CategoryQueryDto>.Success(null,"Kategori bulunamadı.");
                 }
 
                 _categoryRepository.Delete(category);
@@ -96,7 +96,7 @@ namespace KutuphaneServis.Service
                 var categoryDtos = _mapper.Map<IEnumerable<CategoryQueryDto>>(categories);
                 if (categoryDtos == null || categoryDtos.ToList().Count == 0)
                 {
-                    return ResponseGeneric<IEnumerable<CategoryQueryDto>>.Error("Kategori bulunamadı.");
+                    return ResponseGeneric<IEnumerable<CategoryQueryDto>>.Success(null,"Kategori bulunamadı.");
                 }
 
                 return ResponseGeneric<IEnumerable<CategoryQueryDto>>.Success(categoryDtos , "Kategori başarıyla bulundu.");
@@ -117,7 +117,7 @@ namespace KutuphaneServis.Service
 
                 if (categoryDtos == null || categoryDtos.ToList().Count == 0)
                 {
-                    return ResponseGeneric<IEnumerable<CategoryQueryDto>>.Error("Kategori bulunamadı.");
+                    return ResponseGeneric<IEnumerable<CategoryQueryDto>>.Success(null,"Kategori bulunamadı.");
                 }
 
                 return ResponseGeneric<IEnumerable<CategoryQueryDto>>.Success(categoryDtos, "Kategoriler başarıyla döndürüldü.");

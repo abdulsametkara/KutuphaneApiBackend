@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj": {}
+    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\KutuphaneServis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\KutuphaneCore.csproj": {
+    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\KutuphaneCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\KutuphaneCore.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\KutuphaneCore.csproj",
         "projectName": "KutuphaneCore",
-        "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\KutuphaneCore.csproj",
+        "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\KutuphaneCore.csproj",
         "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\obj\\",
+        "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj": {
+    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj",
         "projectName": "KutuphaneDataAccess",
-        "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj",
+        "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj",
         "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneDataAccess\\obj\\",
+        "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,8 +113,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\KutuphaneCore.csproj": {
-                "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneCore\\KutuphaneCore.csproj"
+              "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\KutuphaneCore.csproj": {
+                "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\KutuphaneCore.csproj"
               }
             }
           }
@@ -188,14 +188,14 @@
         }
       }
     },
-    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj": {
+    "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\KutuphaneServis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\KutuphaneServis.csproj",
         "projectName": "KutuphaneServis",
-        "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\KutuphaneServis.csproj",
+        "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\KutuphaneServis.csproj",
         "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneServis\\obj\\",
+        "outputPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -217,8 +217,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj": {
-                "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj"
+              "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj": {
+                "projectPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\KutuphaneDataAccess.csproj"
               }
             }
           }

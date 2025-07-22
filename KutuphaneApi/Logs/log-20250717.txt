@@ -87,3 +87,114 @@ WHERE [a].[Id] = @__p_0
 2025-07-17 10:41:34.117 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetById (KutuphaneApi) in 75.5978ms
 2025-07-17 10:41:34.117 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetById (KutuphaneApi)'
 2025-07-17 10:41:34.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/GetById?id=1 - 200 null application/json; charset=utf-8 84.7205ms
+2025-07-17 12:05:25.191 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 12:05:25.595 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-17 12:05:25.596 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 12:05:25.861 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 12:05:25.861 +03:00 [INF] Hosting environment: Development
+2025-07-17 12:05:25.861 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi\KutuphaneApi
+2025-07-17 12:05:26.448 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger - null null
+2025-07-17 12:05:26.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger - 301 0 null 190.2839ms
+2025-07-17 12:05:26.636 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-17 12:05:26.692 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 56.1426ms
+2025-07-17 12:05:26.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/swagger-ui.css - null null
+2025-07-17 12:05:26.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/swagger-ui-standalone-preset.js - null null
+2025-07-17 12:05:26.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-17 12:05:26.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/swagger-ui-bundle.js - null null
+2025-07-17 12:05:26.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 10.5178ms
+2025-07-17 12:05:26.714 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-17 12:05:26.750 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-07-17 12:05:26.751 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-07-17 12:05:26.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 51.092ms
+2025-07-17 12:05:26.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/swagger-ui.css - 200 152034 text/css 52.2274ms
+2025-07-17 12:05:26.755 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-07-17 12:05:26.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 53.6098ms
+2025-07-17 12:05:26.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.4579ms
+2025-07-17 12:05:27.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-17 12:05:27.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/favicon-32x32.png - null null
+2025-07-17 12:05:27.153 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-07-17 12:05:27.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/favicon-32x32.png - 200 628 image/png 1.2591ms
+2025-07-17 12:05:27.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.1874ms
+2025-07-17 12:05:47.239 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 70
+2025-07-17 12:05:47.246 +03:00 [INF] CORS policy execution successful.
+2025-07-17 12:05:47.249 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 12:05:47.273 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 12:05:49.204 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-17 12:05:49.218 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 12:05:49.222 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 1945.1888ms
+2025-07-17 12:05:49.222 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 12:05:49.227 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 400 null text/plain; charset=utf-8 1987.9812ms
+2025-07-17 12:05:56.718 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 63
+2025-07-17 12:05:56.720 +03:00 [INF] CORS policy execution successful.
+2025-07-17 12:05:56.720 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 12:05:56.720 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 12:05:56.762 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-17 12:05:56.763 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 12:05:56.763 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 42.6332ms
+2025-07-17 12:05:56.763 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 12:05:56.763 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 400 null text/plain; charset=utf-8 45.6475ms
+2025-07-17 12:06:09.312 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/CreateUser - application/json 106
+2025-07-17 12:06:09.313 +03:00 [INF] CORS policy execution successful.
+2025-07-17 12:06:09.313 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.CreateUser (KutuphaneApi)'
+2025-07-17 12:06:09.315 +03:00 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(KutuphaneDataAccess.DTOs.UserCreateDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 12:06:09.340 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1
+2025-07-17 12:06:09.345 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-07-17 12:06:09.345 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.CreateUser (KutuphaneApi) in 30.0219ms
+2025-07-17 12:06:09.345 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.CreateUser (KutuphaneApi)'
+2025-07-17 12:06:09.346 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/CreateUser - 400 null text/plain; charset=utf-8 33.6513ms
+2025-07-17 12:06:15.632 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/CreateUser - application/json 102
+2025-07-17 12:06:15.632 +03:00 [INF] CORS policy execution successful.
+2025-07-17 12:06:15.632 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.CreateUser (KutuphaneApi)'
+2025-07-17 12:06:15.632 +03:00 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateUser(KutuphaneDataAccess.DTOs.UserCreateDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 12:06:15.635 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1
+2025-07-17 12:06:15.741 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Name], [Password], [RecordDate], [Surname], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-07-17 12:06:15.754 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.UserCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-17 12:06:15.758 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.CreateUser (KutuphaneApi) in 126.201ms
+2025-07-17 12:06:15.759 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.CreateUser (KutuphaneApi)'
+2025-07-17 12:06:15.759 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/CreateUser - 200 null application/json; charset=utf-8 127.4992ms
+2025-07-17 12:06:19.209 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 63
+2025-07-17 12:06:19.209 +03:00 [INF] CORS policy execution successful.
+2025-07-17 12:06:19.210 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 12:06:19.210 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-17 12:06:19.212 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-17 12:06:19.232 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-17 12:06:19.233 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 23.2517ms
+2025-07-17 12:06:19.233 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-17 12:06:19.233 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 23.9983ms
+2025-07-17 14:41:51.733 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 14:41:54.489 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 14:41:54.491 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 14:41:54.491 +03:00 [INF] Hosting environment: Development
+2025-07-17 14:41:54.491 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-17 14:42:26.115 +03:00 [INF] Application is shutting down...
+2025-07-17 14:42:29.791 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 14:42:29.903 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 14:42:29.905 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 14:42:29.906 +03:00 [INF] Hosting environment: Development
+2025-07-17 14:42:29.906 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-17 14:43:06.868 +03:00 [INF] Application is shutting down...
+2025-07-17 14:43:10.815 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-17 14:43:10.910 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-17 14:43:10.911 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-17 14:43:10.912 +03:00 [INF] Hosting environment: Development
+2025-07-17 14:43:10.912 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi

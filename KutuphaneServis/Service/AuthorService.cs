@@ -93,13 +93,11 @@ namespace KutuphaneServis.Service
             try
             {
                 var authorList = _authorRepository.GetAll().Where(x => x.Name == name).ToList();
-
                 var authorQueryDtos = _mapper.Map<IEnumerable<AuthorQueryDto>>(authorList);
 
-
-                if (authorQueryDtos.ToList()    .Count == 0 || authorQueryDtos == null)
+                if (authorQueryDtos == null || authorQueryDtos.Count() == 0)
                 {
-                    return ResponseGeneric<IEnumerable<AuthorQueryDto>>.Error("Yazar bulunamadı");
+                    return ResponseGeneric<IEnumerable<AuthorQueryDto>>.Success(new List<AuthorQueryDto>(), "Yazar bulunamadı");
                 }
 
                 return ResponseGeneric<IEnumerable<AuthorQueryDto>>.Success(authorQueryDtos, "Yazar başarıyla bulundu.");
