@@ -287,8 +287,8 @@
   },
   {
     "ContainingType": "KutuphaneApi.Controllers.UploadController",
-    "Method": "GetByFileKey",
-    "RelativePath": "api/Upload/GetByFileKey/{fileKey}",
+    "Method": "GetFile",
+    "RelativePath": "api/Upload/GetFile/{fileKey}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

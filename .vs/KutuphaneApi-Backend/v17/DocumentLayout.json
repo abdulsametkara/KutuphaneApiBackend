@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|solutionrelative:kutuphaneapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneservis\\service\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|solutionrelative:kutuphaneservis\\service\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +35,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "KutuphaneApi\\Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "KutuphaneApi\\Controllers\\UploadController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T06:40:25.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UploadService.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UploadService.cs",
+              "RelativeDocumentMoniker": "KutuphaneServis\\Service\\UploadService.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UploadService.cs",
+              "RelativeToolTip": "KutuphaneServis\\Service\\UploadService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDgAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T06:38:20.714Z",
+              "EditorCaption": ""
             }
           ]
         }

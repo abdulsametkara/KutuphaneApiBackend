@@ -36,6 +36,11 @@ namespace KutuphaneServis.Service
                     return Task.FromResult<IResponse<UploadFileDto>>(ResponseGeneric<UploadFileDto>.Error("Dosya seçilmedi."));
                 }
 
+                var existingFile = _uploadedFiles.GetAll().FirstOrDefault(f => f.FileName == file.FileName);
+                if (existingFile != null) {
+                    return Task.FromResult<IResponse<UploadFileDto>>(ResponseGeneric<UploadFileDto>.Error("Bu dosya daha önce yüklenmiş."));
+                }
+
                 var allowedTypes = new[] { ".jpg", ".jpeg", ".png", ".gif" };
                 if(!allowedTypes.Contains(Path.GetExtension(file.FileName).ToLower()))
                 {
@@ -54,7 +59,7 @@ namespace KutuphaneServis.Service
                 var uploadedFiles = new UploadedFiles
                 {
                     FileName = file.FileName,
-                    FileType = file.ContentType,
+                    FileType = file.ContentType, //MIME type olarak kaydedilir
                     FileKey = Guid.NewGuid().ToString(),
                     Base64String = base64String,
                     RecordDate = DateTime.Now
@@ -79,7 +84,7 @@ namespace KutuphaneServis.Service
             }
         }
 
-        public Task<IResponse<FileResponseDto>> GetByFileKey(string fileKey)
+        public Task<IResponse<FileResponseDto>> GetFile(string fileKey)
         {
             try
             {

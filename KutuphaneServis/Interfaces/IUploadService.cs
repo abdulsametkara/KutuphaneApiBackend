@@ -12,6 +12,6 @@ namespace KutuphaneServis.Interfaces
     public interface IUploadService
     {
         public Task<IResponse<UploadFileDto>> UploadFile(IFormFile file);
-        public Task<IResponse<FileResponseDto>> GetByFileKey(string fileKey);
+        public Task<IResponse<FileResponseDto>> GetFile(string fileKey);
     }
 }

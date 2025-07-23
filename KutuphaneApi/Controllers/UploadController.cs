@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace KutuphaneApi.Controllers
 {
-    [Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
     public class UploadController : ControllerBase
@@ -19,7 +19,6 @@ namespace KutuphaneApi.Controllers
         }
 
         [HttpPost("upload")]
-        [Authorize(Roles = "Admin")]
 
         public async Task<IActionResult> UploadFile(IFormFile file)
         {
@@ -31,14 +30,14 @@ namespace KutuphaneApi.Controllers
             return Ok(result);
         }
 
-        [HttpGet("GetByFileKey/{fileKey}")]
-        public async Task<IActionResult> GetByFileKey(string fileKey)
+        [HttpGet("GetFile/{fileKey}")]
+        public async Task<IActionResult> GetFile(string fileKey)
         {
             if (string.IsNullOrEmpty(fileKey))
             {
                 return BadRequest("FileKey boş bırakılamaz");
             }
-            var response = await _uploadService.GetByFileKey(fileKey);
+            var response = await _uploadService.GetFile(fileKey);
             if (!response.IsSuccess)
             {
                 return NotFound(response.Message);

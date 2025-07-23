@@ -480,7 +480,7 @@
         }
       }
     },
-    "/api/Upload/GetByFileKey/{fileKey}": {
+    "/api/Upload/GetFile/{fileKey}": {
       "get": {
         "tags": [
           "Upload"
