@@ -120,10 +120,12 @@ builder.Services.AddScoped<IGenericRepository<Author>, Repository<Author>>();
 builder.Services.AddScoped<IGenericRepository<Book>, Repository<Book>>();
 builder.Services.AddScoped<IGenericRepository<Category>, Repository<Category>>();
 builder.Services.AddScoped<IGenericRepository<User>, Repository<User>>();
+builder.Services.AddScoped<IGenericRepository<UploadedFiles>, Repository<UploadedFiles>>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUploadService, UploadService>();
 
 var app = builder.Build();
 

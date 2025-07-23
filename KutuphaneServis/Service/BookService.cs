@@ -6,6 +6,7 @@ using KutuphaneServis.Interfaces;
 using KutuphaneServis.Response;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +19,14 @@ namespace KutuphaneServis.Service
     public class BookService : IBookService
     {
         private readonly IGenericRepository<Book> _bookRepository;
+        private readonly IGenericRepository<UploadedFiles> _uploadedFilesRepository;
         private readonly IMapper _mapper;
         private readonly ILogger<BookService> _logger;
 
-        public BookService(IGenericRepository<Book> bookRepository, IMapper mapper, ILogger<BookService> logger)
+        public BookService(IGenericRepository<Book> bookRepository,IGenericRepository<UploadedFiles> uploadedFilesRepository, IMapper mapper, ILogger<BookService> logger)
         {
             _bookRepository = bookRepository;
+            _uploadedFilesRepository = uploadedFilesRepository;
             _mapper = mapper;
             _logger = logger;
         }
@@ -37,6 +40,8 @@ namespace KutuphaneServis.Service
                 {
                     return Task.FromResult<IResponse<BookCreateDto>>(ResponseGeneric<BookCreateDto>.Error("Kitap bilgileri boş bırakılamaz."));
                 }
+
+
                 var newBook = new Book
                 {
                     Title = createBookModel.Title,
@@ -44,7 +49,8 @@ namespace KutuphaneServis.Service
                     CountofPage = createBookModel.CountofPage,
                     AuthorId = createBookModel.AuthorId,
                     CategoryId = createBookModel.CategoryId,
-                    RecordDate = DateTime.Now // veya başka bir tarih ataması
+                    FileKey = createBookModel.FileKey,
+                    RecordDate = DateTime.Now
                 };
 
                 //mapleme işlemi yapılacak

@@ -20496,3 +20496,282 @@ FROM [Categories] AS [c]
 2025-07-22 14:54:33.629 +03:00 [INF] Executed action KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi) in 1.5617ms
 2025-07-22 14:54:33.629 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
 2025-07-22 14:54:33.630 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 200 null application/json; charset=utf-8 2.3954ms
+2025-07-22 16:19:10.609 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:19:10.632 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-07-22 16:19:10.642 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-07-22 16:19:10.685 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-07-22 16:19:10.689 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:19:10.690 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:19:10.692 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:19:10.698 +03:00 [INF] Applying migration '20250722063733_AddRoleToUser'.
+2025-07-22 16:19:10.704 +03:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Users] ADD [Role] nvarchar(max) NOT NULL DEFAULT N'';
+2025-07-22 16:20:52.599 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:20:52.632 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:20:52.643 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:20:58.856 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:20:58.885 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:20:58.895 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:21:25.081 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:21:25.111 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:21:25.120 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:23:28.251 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:23:28.282 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:23:28.292 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:25:12.547 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:25:12.572 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-07-22 16:25:12.581 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-07-22 16:25:12.618 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-07-22 16:25:12.622 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:25:12.623 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:25:12.625 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:25:12.630 +03:00 [INF] Applying migration '20250722132417_add'.
+2025-07-22 16:25:12.639 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UploadedFiles] (
+    [Id] int NOT NULL IDENTITY,
+    [FileKey] nvarchar(max) NOT NULL,
+    [Base64String] nvarchar(max) NOT NULL,
+    [FileName] nvarchar(max) NOT NULL,
+    [FileType] nvarchar(max) NOT NULL,
+    [RecordDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_UploadedFiles] PRIMARY KEY ([Id])
+);
+2025-07-22 16:25:12.640 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250722132417_add', N'9.0.7');
+2025-07-22 16:25:12.641 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-07-22 16:26:39.910 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:26:39.933 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-07-22 16:26:39.941 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-07-22 16:26:39.978 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-07-22 16:26:39.983 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-07-22 16:26:39.984 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-07-22 16:26:39.985 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-07-22 16:26:39.991 +03:00 [INF] Applying migration '20250722132625_add-filekey-books'.
+2025-07-22 16:26:39.998 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD [FileKey] nvarchar(max) NOT NULL DEFAULT N'';
+2025-07-22 16:26:39.998 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250722132625_add-filekey-books', N'9.0.7');
+2025-07-22 16:26:40.000 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-07-22 17:19:27.601 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 17:19:27.837 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-22 17:19:27.838 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-22 17:19:27.900 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 17:19:27.901 +03:00 [INF] Hosting environment: Development
+2025-07-22 17:19:27.901 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-22 17:19:28.346 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-22 17:19:28.557 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 217.0219ms
+2025-07-22 17:19:28.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-22 17:19:28.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-22 17:19:28.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 4.7681ms
+2025-07-22 17:19:28.602 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.1706ms
+2025-07-22 17:19:28.629 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-22 17:19:28.641 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.4592ms
+2025-07-22 17:19:46.417 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 63
+2025-07-22 17:19:46.427 +03:00 [INF] CORS policy execution successful.
+2025-07-22 17:19:46.432 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 17:19:46.449 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 17:19:47.982 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-22 17:19:48.021 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 17:19:48.028 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 1576.1337ms
+2025-07-22 17:19:48.028 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 17:19:48.035 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 1617.9191ms
+2025-07-22 17:21:23.747 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Upload/upload - multipart/form-data; boundary=----WebKitFormBoundarylbbNHPQWmYNBfuWi 8400
+2025-07-22 17:21:23.785 +03:00 [INF] CORS policy execution successful.
+2025-07-22 17:21:23.788 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.UploadFile (KutuphaneApi)'
+2025-07-22 17:21:23.794 +03:00 [INF] Route matched with {action = "UploadFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadFile(Microsoft.AspNetCore.Http.IFormFile) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-22 17:21:23.954 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UploadedFiles] ([Base64String], [FileKey], [FileName], [FileType], [RecordDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-07-22 17:21:23.975 +03:00 [INF] Dosya Yüklendi download.jpeg
+2025-07-22 17:21:23.976 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.UploadFileDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 17:21:23.977 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.UploadFile (KutuphaneApi) in 183.1083ms
+2025-07-22 17:21:23.977 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.UploadFile (KutuphaneApi)'
+2025-07-22 17:21:23.978 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Upload/upload - 200 null application/json; charset=utf-8 230.7907ms
+2025-07-22 17:21:39.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - null null
+2025-07-22 17:21:39.924 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:21:39.928 +03:00 [INF] Route matched with {action = "GetByFileKey", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByFileKey(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-22 17:21:39.948 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-22 17:21:39.949 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 17:21:39.953 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi) in 25.4929ms
+2025-07-22 17:21:39.954 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:21:39.954 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - 200 null application/json; charset=utf-8 33.7834ms
+2025-07-22 17:21:49.759 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-f - null null
+2025-07-22 17:21:49.760 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:21:49.761 +03:00 [INF] Route matched with {action = "GetByFileKey", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByFileKey(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-22 17:21:49.768 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-22 17:21:49.769 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-07-22 17:21:49.770 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi) in 9.4879ms
+2025-07-22 17:21:49.770 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:21:49.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-f - 404 null text/plain; charset=utf-8 11.8591ms
+2025-07-22 17:22:47.922 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - null null
+2025-07-22 17:22:47.929 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:22:47.929 +03:00 [INF] Route matched with {action = "GetByFileKey", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByFileKey(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-22 17:22:47.932 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-22 17:22:47.933 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 17:22:47.943 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi) in 13.4372ms
+2025-07-22 17:22:47.944 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:22:47.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - 200 null application/json; charset=utf-8 23.128ms
+2025-07-22 17:37:43.606 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-22 17:37:43.981 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-22 17:37:43.982 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-22 17:37:44.047 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-22 17:37:44.048 +03:00 [INF] Hosting environment: Development
+2025-07-22 17:37:44.048 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-22 17:37:44.816 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-22 17:37:45.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 319.7371ms
+2025-07-22 17:37:45.132 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-22 17:37:45.133 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-22 17:37:45.141 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 8.2558ms
+2025-07-22 17:37:45.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.4608ms
+2025-07-22 17:37:45.235 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-22 17:37:45.251 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.7685ms
+2025-07-22 17:38:05.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - null null
+2025-07-22 17:38:05.980 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-22 17:38:06.013 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-07-22 17:38:06.018 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-07-22 17:38:06.021 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-22 17:38:06.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - 401 0 null 94.2243ms
+2025-07-22 17:38:21.430 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 63
+2025-07-22 17:38:21.432 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-22 17:38:21.433 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2025-07-22 17:38:21.435 +03:00 [INF] CORS policy execution successful.
+2025-07-22 17:38:21.439 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 17:38:21.459 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-22 17:38:23.017 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__user_Email_1='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] = @__user_Email_1) AND [u].[Password] = @__HashPassword_2
+2025-07-22 17:38:23.039 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-22 17:38:23.046 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 1584.9818ms
+2025-07-22 17:38:23.046 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-22 17:38:23.052 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 1621.8925ms
+2025-07-22 17:38:36.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - null null
+2025-07-22 17:38:36.721 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:38:36.726 +03:00 [INF] Route matched with {action = "GetByFileKey", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByFileKey(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-22 17:38:36.774 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-22 17:38:36.775 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-22 17:38:36.785 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi) in 58.2328ms
+2025-07-22 17:38:36.785 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetByFileKey (KutuphaneApi)'
+2025-07-22 17:38:36.785 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetByFileKey/bd5536b2-dbfd-4ed6-b100-ffe862fcbda6 - 200 null application/json; charset=utf-8 80.0633ms

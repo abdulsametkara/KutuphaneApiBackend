@@ -5,14 +5,14 @@
 namespace KutuphaneDataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class AddRoleToUser : Migration
+    public partial class addfilekeybooks : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Role",
-                table: "Users",
+                name: "FileKey",
+                table: "Books",
                 type: "nvarchar(max)",
                 nullable: false,
                 defaultValue: "");
@@ -22,8 +22,8 @@ namespace KutuphaneDataAccess.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Role",
-                table: "Users");
+                name: "FileKey",
+                table: "Books");
         }
     }
 }
