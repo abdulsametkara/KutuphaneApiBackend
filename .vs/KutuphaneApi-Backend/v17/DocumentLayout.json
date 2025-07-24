@@ -3,8 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|solutionrelative:kutuphaneapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Kutuphane2/True/SqlTable/dbo.UploadedFiles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneservis\\service\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,14 +38,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UploadController.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\UploadController.cs",
-              "RelativeDocumentMoniker": "KutuphaneApi\\Controllers\\UploadController.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\UploadController.cs",
-              "RelativeToolTip": "KutuphaneApi\\Controllers\\UploadController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T06:40:25.755Z",
+              "Title": "dbo.UploadedFiles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Kutuphane2/True/SqlTable/dbo.UploadedFiles.sql",
+              "ToolTip": "dbo.UploadedFiles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-24T07:44:08.888Z",
               "EditorCaption": ""
             },
             {
@@ -57,7 +53,7 @@
               "RelativeDocumentMoniker": "KutuphaneServis\\Service\\UploadService.cs",
               "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UploadService.cs",
               "RelativeToolTip": "KutuphaneServis\\Service\\UploadService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDgAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-23T06:38:20.714Z",
               "EditorCaption": ""

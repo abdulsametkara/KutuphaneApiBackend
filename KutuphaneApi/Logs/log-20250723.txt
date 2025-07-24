@@ -14882,3 +14882,365 @@ WHERE [u].[FileKey] = @__fileKey_0
 2025-07-23 16:49:05.239 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 7.902ms
 2025-07-23 16:49:05.239 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
 2025-07-23 16:49:05.239 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/d97c3a84-d9dc-444a-b583-f2b7e8be233d - 200 null application/json; charset=utf-8 8.7836ms
+2025-07-23 17:21:50.949 +03:00 [INF] User profile is available. Using 'C:\Users\samet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-23 17:21:51.424 +03:00 [INF] Now listening on: https://localhost:7275
+2025-07-23 17:21:51.425 +03:00 [INF] Now listening on: http://localhost:5114
+2025-07-23 17:21:51.530 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-23 17:21:51.530 +03:00 [INF] Hosting environment: Development
+2025-07-23 17:21:51.530 +03:00 [INF] Content root path: C:\Users\samet\Desktop\test-project\projeler\KutuphaneApi-Backend\KutuphaneApi
+2025-07-23 17:21:52.411 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/index.html - null null
+2025-07-23 17:21:53.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/index.html - 200 null text/html;charset=utf-8 731.3364ms
+2025-07-23 17:21:53.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - null null
+2025-07-23 17:21:53.182 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_framework/aspnetcore-browser-refresh.js - 200 16509 application/javascript; charset=utf-8 35.201ms
+2025-07-23 17:21:53.183 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/_vs/browserLink - null null
+2025-07-23 17:21:53.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/_vs/browserLink - 200 null text/javascript; charset=UTF-8 160.5582ms
+2025-07-23 17:21:53.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - null null
+2025-07-23 17:21:53.469 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.7582ms
+2025-07-23 17:22:01.337 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/User/Login - null null
+2025-07-23 17:22:01.344 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:01.346 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/User/Login - 204 null null 9.0022ms
+2025-07-23 17:22:01.351 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/User/Login - application/json 33
+2025-07-23 17:22:01.354 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:01.357 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-23 17:22:01.374 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(KutuphaneDataAccess.DTOs.UserLoginDto) on controller KutuphaneApi.Controllers.UserController (KutuphaneApi).
+2025-07-23 17:22:03.671 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__user_Username_0='?' (Size = 4000), @__HashPassword_2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[Password], [u].[RecordDate], [u].[Role], [u].[Surname], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Username] = @__user_Username_0 OR [u].[Email] IS NULL) AND [u].[Password] = @__HashPassword_2
+2025-07-23 17:22:03.711 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:03.718 +03:00 [INF] Executed action KutuphaneApi.Controllers.UserController.Login (KutuphaneApi) in 2341.5295ms
+2025-07-23 17:22:03.718 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UserController.Login (KutuphaneApi)'
+2025-07-23 17:22:03.724 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/User/Login - 200 null application/json; charset=utf-8 2373.3804ms
+2025-07-23 17:22:03.742 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:03.742 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Category/ListAll - null null
+2025-07-23 17:22:03.742 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Author/ListAll - null null
+2025-07-23 17:22:03.744 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:03.744 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:03.744 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:03.747 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Category/ListAll - 204 null null 4.7929ms
+2025-07-23 17:22:03.747 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Author/ListAll - 204 null null 4.2512ms
+2025-07-23 17:22:03.747 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/ListAll - 204 null null 4.8313ms
+2025-07-23 17:22:03.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:03.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-23 17:22:03.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-23 17:22:03.782 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:03.782 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:03.785 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:03.785 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:03.786 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:03.787 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-23 17:22:03.787 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:03.787 +03:00 [INF] Route matched with {action = "ListAll", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ListAll() on controller KutuphaneApi.Controllers.CategoryController (KutuphaneApi).
+2025-07-23 17:22:03.787 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-23 17:22:03.882 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[FileKey], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-23 17:22:03.882 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+2025-07-23 17:22:03.885 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name], [c].[RecordDate]
+FROM [Categories] AS [c]
+2025-07-23 17:22:03.894 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.CategoryQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:03.894 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:03.894 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:03.899 +03:00 [INF] Executed action KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi) in 111.8935ms
+2025-07-23 17:22:03.899 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:03.899 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 111.5582ms
+2025-07-23 17:22:03.899 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:03.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 200 null application/json; charset=utf-8 147.0617ms
+2025-07-23 17:22:03.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 147.146ms
+2025-07-23 17:22:03.899 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi) in 112.3673ms
+2025-07-23 17:22:03.899 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:03.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 200 null application/json; charset=utf-8 147.1952ms
+2025-07-23 17:22:04.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:04.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-23 17:22:04.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-23 17:22:04.641 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.641 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.641 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:04.641 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:04.641 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.641 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:04.641 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-23 17:22:04.641 +03:00 [INF] Route matched with {action = "ListAll", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ListAll() on controller KutuphaneApi.Controllers.CategoryController (KutuphaneApi).
+2025-07-23 17:22:04.641 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-23 17:22:04.653 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+2025-07-23 17:22:04.653 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name], [c].[RecordDate]
+FROM [Categories] AS [c]
+2025-07-23 17:22:04.653 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[FileKey], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-23 17:22:04.654 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:04.654 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.CategoryQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:04.654 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:04.654 +03:00 [INF] Executed action KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi) in 12.6662ms
+2025-07-23 17:22:04.654 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi) in 12.6496ms
+2025-07-23 17:22:04.654 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:04.654 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:04.654 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 12.6838ms
+2025-07-23 17:22:04.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 200 null application/json; charset=utf-8 14.072ms
+2025-07-23 17:22:04.654 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:04.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 200 null application/json; charset=utf-8 14.0719ms
+2025-07-23 17:22:04.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 14.7021ms
+2025-07-23 17:22:04.655 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:04.656 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.656 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:04.656 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-23 17:22:04.660 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[FileKey], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-23 17:22:04.660 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:04.660 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 3.674ms
+2025-07-23 17:22:04.660 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:04.660 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 4.8157ms
+2025-07-23 17:22:04.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/be202548-d2d2-443a-b83c-ffccb52c79d1 - null null
+2025-07-23 17:22:04.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7854a18e-37b2-48a1-9aa9-19a619b62ea2 - null null
+2025-07-23 17:22:04.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7c299b1a-1777-4813-835a-739ced440cc7 - null null
+2025-07-23 17:22:04.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/f16c256c-442f-41d5-a91b-38c6a0a075a7 - null null
+2025-07-23 17:22:04.667 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/d97c3a84-d9dc-444a-b583-f2b7e8be233d - null null
+2025-07-23 17:22:04.667 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.667 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.667 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.667 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.667 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:04.667 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.667 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.667 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.667 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.667 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.675 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:04.675 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:04.675 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:04.675 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:04.675 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:04.686 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:04.686 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:04.687 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:04.689 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:04.690 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:04.690 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:04.691 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:04.691 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:04.693 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:04.699 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:04.718 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 43.2482ms
+2025-07-23 17:22:04.718 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 43.187ms
+2025-07-23 17:22:04.718 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 43.1614ms
+2025-07-23 17:22:04.718 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 43.2264ms
+2025-07-23 17:22:04.718 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 43.1347ms
+2025-07-23 17:22:04.719 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.719 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.719 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.719 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.719 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:04.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/d97c3a84-d9dc-444a-b583-f2b7e8be233d - 200 null application/json; charset=utf-8 55.2575ms
+2025-07-23 17:22:04.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7c299b1a-1777-4813-835a-739ced440cc7 - 200 null application/json; charset=utf-8 55.4516ms
+2025-07-23 17:22:04.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7854a18e-37b2-48a1-9aa9-19a619b62ea2 - 200 null application/json; charset=utf-8 55.4543ms
+2025-07-23 17:22:04.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/be202548-d2d2-443a-b83c-ffccb52c79d1 - 200 null application/json; charset=utf-8 55.6262ms
+2025-07-23 17:22:04.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/f16c256c-442f-41d5-a91b-38c6a0a075a7 - 200 null application/json; charset=utf-8 55.5882ms
+2025-07-23 17:22:06.777 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-23 17:22:06.777 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-23 17:22:06.778 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:06.778 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:06.778 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:06.778 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:06.778 +03:00 [INF] Route matched with {action = "ListAll", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ListAll() on controller KutuphaneApi.Controllers.CategoryController (KutuphaneApi).
+2025-07-23 17:22:06.778 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-23 17:22:06.780 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+2025-07-23 17:22:06.780 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name], [c].[RecordDate]
+FROM [Categories] AS [c]
+2025-07-23 17:22:06.780 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.CategoryQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:06.780 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:06.781 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi) in 2.5491ms
+2025-07-23 17:22:06.781 +03:00 [INF] Executed action KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi) in 2.5617ms
+2025-07-23 17:22:06.781 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:06.781 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:06.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 200 null application/json; charset=utf-8 3.547ms
+2025-07-23 17:22:06.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 200 null application/json; charset=utf-8 3.9141ms
+2025-07-23 17:22:17.775 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Upload/upload - multipart/form-data; boundary=----WebKitFormBoundaryny0AuB2gLtdXb3Mx 8400
+2025-07-23 17:22:17.777 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:17.777 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.UploadFile (KutuphaneApi)'
+2025-07-23 17:22:17.781 +03:00 [INF] Route matched with {action = "UploadFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadFile(Microsoft.AspNetCore.Http.IFormFile) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:17.806 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__file_FileName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileName] = @__file_FileName_0
+2025-07-23 17:22:17.901 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = -1), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UploadedFiles] ([Base64String], [FileKey], [FileName], [FileType], [RecordDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-07-23 17:22:17.919 +03:00 [INF] Dosya Yüklendi download.jpeg
+2025-07-23 17:22:17.919 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.UploadFileDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:17.920 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.UploadFile (KutuphaneApi) in 139.4256ms
+2025-07-23 17:22:17.920 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.UploadFile (KutuphaneApi)'
+2025-07-23 17:22:17.921 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Upload/upload - 200 null application/json; charset=utf-8 145.7212ms
+2025-07-23 17:22:19.041 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - null null
+2025-07-23 17:22:19.041 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.041 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/Create - 204 null null 1.0693ms
+2025-07-23 17:22:19.043 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7275/api/Book/Create - application/json 137
+2025-07-23 17:22:19.043 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.044 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-23 17:22:19.046 +03:00 [INF] Route matched with {action = "Create", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(KutuphaneDataAccess.DTOs.BookCreateDto) on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-23 17:22:19.066 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [CategoryId], [CountofPage], [Description], [FileKey], [RecordDate], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-07-23 17:22:19.067 +03:00 [INF] Kitap başarıyla oluşturuldu: aa
+2025-07-23 17:22:19.067 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.BookCreateDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.069 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.Create (KutuphaneApi) in 22.1884ms
+2025-07-23 17:22:19.069 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.Create (KutuphaneApi)'
+2025-07-23 17:22:19.069 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7275/api/Book/Create - 200 null application/json; charset=utf-8 25.7686ms
+2025-07-23 17:22:19.576 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:19.576 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.576 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/ListAll - 204 null null 0.5979ms
+2025-07-23 17:22:19.576 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Author/ListAll - null null
+2025-07-23 17:22:19.576 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Category/ListAll - null null
+2025-07-23 17:22:19.576 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:19.577 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.577 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.577 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.577 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Author/ListAll - 204 null null 0.4372ms
+2025-07-23 17:22:19.577 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Category/ListAll - 204 null null 0.449ms
+2025-07-23 17:22:19.577 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7275/api/Book/ListAll - 204 null null 0.3623ms
+2025-07-23 17:22:19.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Author/ListAll - null null
+2025-07-23 17:22:19.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Category/ListAll - null null
+2025-07-23 17:22:19.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:19.579 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.579 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.579 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.579 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:19.579 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:19.579 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:19.579 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-23 17:22:19.579 +03:00 [INF] Route matched with {action = "GetAll", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.AuthorController (KutuphaneApi).
+2025-07-23 17:22:19.579 +03:00 [INF] Route matched with {action = "ListAll", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ListAll() on controller KutuphaneApi.Controllers.CategoryController (KutuphaneApi).
+2025-07-23 17:22:19.581 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [a].[PlaceofBirth], [a].[RecordDate], [a].[Surname], [a].[YearofBirth]
+FROM [Authors] AS [a]
+2025-07-23 17:22:19.581 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Name], [c].[RecordDate]
+FROM [Categories] AS [c]
+2025-07-23 17:22:19.581 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[FileKey], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-23 17:22:19.581 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneCore.DTOs.AuthorQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:19.581 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.CategoryQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:19.581 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:19.581 +03:00 [INF] Executed action KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi) in 1.392ms
+2025-07-23 17:22:19.581 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 1.4185ms
+2025-07-23 17:22:19.581 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.CategoryController.ListAll (KutuphaneApi)'
+2025-07-23 17:22:19.581 +03:00 [INF] Executed action KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi) in 1.4109ms
+2025-07-23 17:22:19.581 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:19.581 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.AuthorController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:19.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Author/ListAll - 200 null application/json; charset=utf-8 2.4643ms
+2025-07-23 17:22:19.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 2.4655ms
+2025-07-23 17:22:19.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Category/ListAll - 200 null application/json; charset=utf-8 2.4587ms
+2025-07-23 17:22:19.584 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Book/ListAll - null null
+2025-07-23 17:22:19.584 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.584 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:19.585 +03:00 [INF] Route matched with {action = "GetAll", controller = "Book"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller KutuphaneApi.Controllers.BookController (KutuphaneApi).
+2025-07-23 17:22:19.586 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[CategoryId], [b].[CountofPage], [b].[Description], [b].[FileKey], [b].[RecordDate], [b].[Title]
+FROM [Books] AS [b]
+2025-07-23 17:22:19.587 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[System.Collections.Generic.IEnumerable`1[[KutuphaneDataAccess.DTOs.BookQueryDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-07-23 17:22:19.587 +03:00 [INF] Executed action KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi) in 2.3076ms
+2025-07-23 17:22:19.587 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.BookController.GetAll (KutuphaneApi)'
+2025-07-23 17:22:19.587 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Book/ListAll - 200 null application/json; charset=utf-8 4.0843ms
+2025-07-23 17:22:19.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/e76a2d32-7da3-493a-8066-3ed8f6ebab41 - null null
+2025-07-23 17:22:19.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7c299b1a-1777-4813-835a-739ced440cc7 - null null
+2025-07-23 17:22:19.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/be202548-d2d2-443a-b83c-ffccb52c79d1 - null null
+2025-07-23 17:22:19.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/d97c3a84-d9dc-444a-b583-f2b7e8be233d - null null
+2025-07-23 17:22:19.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7854a18e-37b2-48a1-9aa9-19a619b62ea2 - null null
+2025-07-23 17:22:19.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7275/api/Upload/GetFile/f16c256c-442f-41d5-a91b-38c6a0a075a7 - null null
+2025-07-23 17:22:19.604 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.604 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.604 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.604 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.604 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.604 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.604 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.604 +03:00 [INF] CORS policy execution successful.
+2025-07-23 17:22:19.604 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.604 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:19.605 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.604 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.604 +03:00 [INF] Executing endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.604 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:19.605 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:19.605 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:19.605 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:19.605 +03:00 [INF] Route matched with {action = "GetFile", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFile(System.String) on controller KutuphaneApi.Controllers.UploadController (KutuphaneApi).
+2025-07-23 17:22:19.607 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:19.607 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:19.607 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:19.607 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:19.607 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:19.607 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.607 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.607 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.607 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.609 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.611 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 5.755ms
+2025-07-23 17:22:19.611 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 5.8841ms
+2025-07-23 17:22:19.611 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 6.0608ms
+2025-07-23 17:22:19.612 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.612 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.612 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 7.3402ms
+2025-07-23 17:22:19.613 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.613 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/e76a2d32-7da3-493a-8066-3ed8f6ebab41 - 200 null application/json; charset=utf-8 9.4361ms
+2025-07-23 17:22:19.614 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/d97c3a84-d9dc-444a-b583-f2b7e8be233d - 200 null application/json; charset=utf-8 9.4978ms
+2025-07-23 17:22:19.614 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7c299b1a-1777-4813-835a-739ced440cc7 - 200 null application/json; charset=utf-8 10.8153ms
+2025-07-23 17:22:19.614 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 9.7563ms
+2025-07-23 17:22:19.615 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.615 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/be202548-d2d2-443a-b83c-ffccb52c79d1 - 200 null application/json; charset=utf-8 11.0535ms
+2025-07-23 17:22:19.615 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/7854a18e-37b2-48a1-9aa9-19a619b62ea2 - 200 null application/json; charset=utf-8 11.8726ms
+2025-07-23 17:22:19.617 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__fileKey_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Base64String], [u].[FileKey], [u].[FileName], [u].[FileType], [u].[RecordDate]
+FROM [UploadedFiles] AS [u]
+WHERE [u].[FileKey] = @__fileKey_0
+2025-07-23 17:22:19.617 +03:00 [INF] Executing OkObjectResult, writing value of type 'KutuphaneServis.Response.ResponseGeneric`1[[KutuphaneDataAccess.DTOs.FileResponseDto, KutuphaneDataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-23 17:22:19.621 +03:00 [INF] Executed action KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi) in 16.0687ms
+2025-07-23 17:22:19.621 +03:00 [INF] Executed endpoint 'KutuphaneApi.Controllers.UploadController.GetFile (KutuphaneApi)'
+2025-07-23 17:22:19.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7275/api/Upload/GetFile/f16c256c-442f-41d5-a91b-38c6a0a075a7 - 200 null application/json; charset=utf-8 16.9894ms

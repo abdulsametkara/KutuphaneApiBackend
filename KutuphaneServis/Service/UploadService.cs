@@ -4,14 +4,7 @@ using KutuphaneDataAccess.Repository;
 using KutuphaneServis.Interfaces;
 using KutuphaneServis.Response;
 using Microsoft.AspNetCore.Http;
-using KutuphaneServis.Interfaces;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 
 namespace KutuphaneServis.Service
@@ -96,8 +89,8 @@ namespace KutuphaneServis.Service
                 var responseDto = new FileResponseDto
                 {
                     FileName = file.FileName,
-                    Base64String = file.Base64String,
-                    FileType = file.FileType
+                    FileType = file.FileType,
+                    Base64String = file.Base64String
                 };
 
                 return Task.FromResult<IResponse<FileResponseDto>>(ResponseGeneric<FileResponseDto>.Success(responseDto, "Dosya başarıyla bulundu."));
