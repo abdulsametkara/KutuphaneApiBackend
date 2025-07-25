@@ -27,7 +27,7 @@ namespace KutuphaneApi.Controllers
             {
                 return BadRequest(response.Message);
             }
-            return Ok(response.Data);
+            return Ok(response);
         }
 
         [HttpPost("BorrowBook")]
@@ -56,6 +56,7 @@ namespace KutuphaneApi.Controllers
             return Ok(response);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet("GetUserActiveLoans/{userId}")]
         public IActionResult GetUserActiveLoans(int userId)
         {

@@ -3,31 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneservis\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|solutionrelative:kutuphaneservis\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Kutuphane2/True/SqlTable/dbo.BookLoans.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneservis\\interfaces\\iuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|solutionrelative:kutuphaneservis\\interfaces\\iuploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|solutionrelative:kutuphaneapi\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneservis\\service\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05AA6997-CEC1-4CE0-89BF-8BF90D3D0055}|KutuphaneServis\\KutuphaneServis.csproj|solutionrelative:kutuphaneservis\\service\\uploadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D05B6DFF-6E29-46C8-A25F-F8100B005FB5}|KutuphaneDataAccess\\KutuphaneDataAccess.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphanedataaccess\\dtos\\uploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D05B6DFF-6E29-46C8-A25F-F8100B005FB5}|KutuphaneDataAccess\\KutuphaneDataAccess.csproj|solutionrelative:kutuphanedataaccess\\dtos\\uploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57E839A7-1073-484C-B8E9-7C4FCA1CB9E9}|KutuphaneCore\\KutuphaneCore.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphanecore\\entities\\uploadedfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57E839A7-1073-484C-B8E9-7C4FCA1CB9E9}|KutuphaneCore\\KutuphaneCore.csproj|solutionrelative:kutuphanecore\\entities\\uploadedfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D05B6DFF-6E29-46C8-A25F-F8100B005FB5}|KutuphaneDataAccess\\KutuphaneDataAccess.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphanedataaccess\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D05B6DFF-6E29-46C8-A25F-F8100B005FB5}|KutuphaneDataAccess\\KutuphaneDataAccess.csproj|solutionrelative:kutuphanedataaccess\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|c:\\users\\samet\\desktop\\test-project\\projeler\\kutuphaneapi-backend\\kutuphaneapi\\controllers\\bookloancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB05F86C-BC21-4637-93B4-4F6DCAB06B8F}|KutuphaneApi\\KutuphaneApi.csproj|solutionrelative:kutuphaneapi\\controllers\\bookloancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,89 +42,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "dbo.BookLoans [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Kutuphane2/True/SqlTable/dbo.BookLoans.sql",
-              "ToolTip": "dbo.BookLoans [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-07-25T08:53:19.889Z",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "KutuphaneServis\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UserService.cs",
+              "RelativeToolTip": "KutuphaneServis\\Service\\UserService.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwHUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:52:45.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUploadService.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Interfaces\\IUploadService.cs",
-              "RelativeDocumentMoniker": "KutuphaneServis\\Interfaces\\IUploadService.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Interfaces\\IUploadService.cs",
-              "RelativeToolTip": "KutuphaneServis\\Interfaces\\IUploadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:43:38.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UploadDto.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\DTOs\\UploadDto.cs",
-              "RelativeDocumentMoniker": "KutuphaneDataAccess\\DTOs\\UploadDto.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\DTOs\\UploadDto.cs",
-              "RelativeToolTip": "KutuphaneDataAccess\\DTOs\\UploadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:43:10.036Z",
+              "Title": "dbo.BookLoans [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Kutuphane2/True/SqlTable/dbo.BookLoans.sql",
+              "ToolTip": "dbo.BookLoans [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-25T11:37:16.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UploadController.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\UploadController.cs",
-              "RelativeDocumentMoniker": "KutuphaneApi\\Controllers\\UploadController.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\UploadController.cs",
-              "RelativeToolTip": "KutuphaneApi\\Controllers\\UploadController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAANAAAAAAAAAA==",
+              "Title": "BookLoanController.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\BookLoanController.cs",
+              "RelativeDocumentMoniker": "KutuphaneApi\\Controllers\\BookLoanController.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneApi\\Controllers\\BookLoanController.cs",
+              "RelativeToolTip": "KutuphaneApi\\Controllers\\BookLoanController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:36:28.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UploadedFiles.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\Entities\\UploadedFiles.cs",
-              "RelativeDocumentMoniker": "KutuphaneCore\\Entities\\UploadedFiles.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneCore\\Entities\\UploadedFiles.cs",
-              "RelativeToolTip": "KutuphaneCore\\Entities\\UploadedFiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:35:27.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UploadService.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UploadService.cs",
-              "RelativeDocumentMoniker": "KutuphaneServis\\Service\\UploadService.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneServis\\Service\\UploadService.cs",
-              "RelativeToolTip": "KutuphaneServis\\Service\\UploadService.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAgwAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T06:33:38.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookDto.cs",
-              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\DTOs\\BookDto.cs",
-              "RelativeDocumentMoniker": "KutuphaneDataAccess\\DTOs\\BookDto.cs",
-              "ToolTip": "C:\\Users\\samet\\Desktop\\test-project\\projeler\\KutuphaneApi-Backend\\KutuphaneDataAccess\\DTOs\\BookDto.cs",
-              "RelativeToolTip": "KutuphaneDataAccess\\DTOs\\BookDto.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA+wCwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T14:20:42.409Z",
+              "WhenOpened": "2025-07-25T11:24:05.802Z",
               "EditorCaption": ""
             }
           ]
