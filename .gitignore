@@ -1,7 +1,7 @@
 # .NET ve Visual Studio için .gitignore dosyası
 
 ###################
-# .NET Framework & .NET Core
+# .NET Framework & .NET Core & .NET 8
 ###################
 
 # Build sonuçları
@@ -20,8 +20,16 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-# Visual Studio 2015/2017 cache/options directory
+# Visual Studio 2015/2017/2019/2022 cache/options directory
 .vs/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
@@ -51,6 +59,9 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
 # StyleCop
 StyleCopReport.xml
 
@@ -76,6 +87,7 @@ StyleCopReport.xml
 *.tmp_proj
 *_wpftmp.csproj
 *.log
+*.tlog
 *.vspscc
 *.vssscc
 .builds
@@ -347,21 +359,15 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
+# .NET 8 specific
+*.rsp
+**/PublishProfiles/
+
 ###################
 # JetBrains Rider
 ###################
 .idea/
 *.sln.iml
-
-###################
-# VS Code
-###################
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
 
 ###################
 # Entity Framework
@@ -372,11 +378,92 @@ FodyWeavers.xsd
 ###################
 # ASP.NET Core
 ###################
-appsettings.Development.json
-appsettings.Local.json
-appsettings.Production.json
 wwwroot/uploads/
 /wwwroot/lib/
+
+###################
+# Angular/Node.js (Frontend)
+###################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# Angular
+dist/
+tmp/
+out-tsc/
+bazel-out
 
 ###################
 # Log dosyaları
@@ -482,3 +569,8 @@ temp/
 # Test coverage reports
 TestResults/
 coverage/
+
+###################
+# Copilot ve AI araçları
+###################
+.vs/*/CopilotIndices/
