@@ -50,6 +50,8 @@ namespace KutuphaneServis.Service
                     AuthorId = createBookModel.AuthorId,
                     CategoryId = createBookModel.CategoryId,
                     FileKey = createBookModel.FileKey,
+                    TotalCopies = createBookModel.TotalCopies,
+                    AvailableCopies = createBookModel.AvailableCopies,
                     RecordDate = DateTime.Now
                 };
 
