@@ -196,6 +196,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KutuphaneApi.Controllers.BookLoanController",
+    "Method": "BorrowBookAsync",
+    "RelativePath": "api/BookLoan/BorrowBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookLoanCreateDto",
+        "Type": "KutuphaneDataAccess.DTOs.BookLoanCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneApi.Controllers.BookLoanController",
+    "Method": "GetAllLoans",
+    "RelativePath": "api/BookLoan/GetAllLoans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneApi.Controllers.BookLoanController",
+    "Method": "GetUserActiveLoans",
+    "RelativePath": "api/BookLoan/GetUserActiveLoans/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneApi.Controllers.BookLoanController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/BookLoan/ReturnBook/{loanId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loanId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KutuphaneApi.Controllers.CategoryController",
     "Method": "Create",
     "RelativePath": "api/Category/Create",

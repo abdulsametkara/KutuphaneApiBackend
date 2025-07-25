@@ -16,6 +16,7 @@ namespace KutuphaneDataAccess
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<UploadedFiles> UploadedFiles { get; set; }
+        public DbSet<BookLoan> BookLoans { get; set; }
         #endregion
         public DatabaseConnection(DbContextOptions<DatabaseConnection> options) : base(options)
         {

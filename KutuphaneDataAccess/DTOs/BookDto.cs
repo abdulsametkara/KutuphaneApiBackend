@@ -14,6 +14,8 @@ namespace KutuphaneDataAccess.DTOs
         public string? FileKey { get; set; }
         public int AuthorId { get; set; }
         public int CategoryId { get; set; }
+        public int TotalCopies { get; set; }
+        public int AvailableCopies { get; set; }
     }
 
     public class BookQueryDto
@@ -27,6 +29,8 @@ namespace KutuphaneDataAccess.DTOs
 
         public int AuthorId { get; set; }
         public int CategoryId { get; set; }
+        public int TotalCopies { get; set; }
+        public int AvailableCopies { get; set; }
     }
 
     public class BookUpdateDto
@@ -37,5 +41,7 @@ namespace KutuphaneDataAccess.DTOs
         public int? CountofPage { get; set; }
         public int? AuthorId { get; set; }
         public int? CategoryId { get; set; }
+        public int TotalCopies { get; set; }
+        public int AvailableCopies { get; set; }
     }
 }
