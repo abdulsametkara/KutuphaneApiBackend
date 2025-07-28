@@ -94,6 +94,13 @@ namespace KutuphaneServis.Service
         {
             try
             {
+              
+                var user = _userRepository.GetByIdAsync(userId).Result; 
+                if (user == null)
+                {
+                    return ResponseGeneric<IEnumerable<BookLoanDto>>.Error("Kullanıcı bulunamadı.");
+                }
+
                 var activeLoans = _bookLoanRepository.GetAll()
                     .Where(loan => loan.UserId == userId && !loan.IsReturned)
                     .Select(loan => new BookLoanDto
