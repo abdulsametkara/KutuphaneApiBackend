@@ -111,14 +111,36 @@ namespace KutuphaneApi.Controllers
         }
 
         [HttpGet("{id}/description")]
-        public async Task<IActionResult> GetBookDescription(int id)
+        public async Task<IActionResult> GetBookDescFromRedis(int id)
         {
-            var result = await _redisCacheService.GetBookDescriptionAsync(id);
-            if (result.IsSuccess)
+            try
             {
-                return Ok(result.Data);
+                var result = await _redisCacheService.GetBookDescriptionAsync(id);
+
+                if (result.IsSuccess)
+                {
+                    return Ok(new
+                    {
+                        isSuccess = true,
+                        message = result.Message,
+                        data = result.Data
+                    });
+                }
+
+                return BadRequest(new
+                {
+                    isSuccess = false,
+                    message = result.Message
+                });
             }
-            return NotFound(result.Message);
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    isSuccess = false,
+                    message = $"Sunucu hatası: {ex.Message}"
+                });
+            }
         }
     }
 }
