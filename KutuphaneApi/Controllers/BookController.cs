@@ -12,9 +12,11 @@ namespace KutuphaneApi.Controllers
     public class BookController : ControllerBase
     {
         private readonly IBookService _bookService;
-        public BookController(IBookService bookService)
+        private readonly IRedisCacheService _redisCacheService;
+        public BookController(IBookService bookService, IRedisCacheService redisCacheService)
         {
             _bookService = bookService;
+            _redisCacheService = redisCacheService;
         }
 
         [EnableRateLimiting("fixed")]
@@ -106,6 +108,17 @@ namespace KutuphaneApi.Controllers
                 return BadRequest(result.Message);
             }
             return Ok(result);
+        }
+
+        [HttpGet("{id}/description")]
+        public async Task<IActionResult> GetBookDescription(int id)
+        {
+            var result = await _redisCacheService.GetBookDescriptionAsync(id);
+            if (result.IsSuccess)
+            {
+                return Ok(result.Data);
+            }
+            return NotFound(result.Message);
         }
     }
 }

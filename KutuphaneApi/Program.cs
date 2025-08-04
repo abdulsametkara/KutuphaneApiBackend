@@ -5,14 +5,15 @@ using KutuphaneServis.Interfaces;
 using KutuphaneServis.MapProfile;
 using KutuphaneServis.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Serilog;
-using System.Text;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.RateLimiting;
-using System.Threading.RateLimiting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
+using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using StackExchange.Redis;
 using System.Security.Claims;
+using System.Text;
+using System.Threading.RateLimiting;
 
 //log yapýlandýrmasý
 Log.Logger = new LoggerConfiguration()
@@ -62,6 +63,22 @@ builder.Services.AddAuthentication(options =>
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+
+
+// Redis cache configuration
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+});
+
+builder.Services.AddSingleton<IConnectionMultiplexer>(provider =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(connectionString!);
+});
+
+builder.Services.AddScoped<IRedisCacheService, RedisCacheService>();
 
 
 //builder.Services.AddSwaggerGen();
