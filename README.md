@@ -492,5 +492,3 @@ Proje hakkında sorularınız için:
 - 💬 Issues: GitHub Issues sekmesini kullanabilirsiniz
 
 ---
-
-**⚡ Bu Proje Hakkında:** Modern .NET 8 teknolojileri ile geliştirilmiş profesyonel seviyede kütüphane yönetim sistemi API'si. Clean Architecture, JWT Authentication, Redis Cache, Rate Limiting, ve daha birçok modern özellik içerir. Gerçek dünya projelerinde kullanılabilecek kalitede geliştirilmiştir.
